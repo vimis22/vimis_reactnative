@@ -3,6 +3,7 @@ import {StyleSheet, View} from "react-native";
 import SectionTitle from "../banners/SectionTitle";
 import TextInputComponent from "../banners/TextInputComponent";
 import NavigationButton from "../banners/NavigationButton";
+import TextTitle from "../banners/TextTitle";
 
 const SignupScreen = ({navigation}: any) => {
     return (
@@ -17,7 +18,8 @@ const SignupScreen = ({navigation}: any) => {
             </form>
             {/*Når man klikker på knappen, så virker formen.*/}
             <NavigationButton text={"LOGIN"} path={"MainScreen"} navigation={navigation}/>
-            <NavigationButton text={"Dont have an Account?"} path={"SignupScreen"} navigation={navigation}/>
+            <TextTitle text={"Already have an Account?"}/>
+            <NavigationButton text={"PRESS LOGIN HERE"} path={"LoginScreen"} navigation={navigation}/>
         </View>
     );
 };
