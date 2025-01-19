@@ -1,18 +1,18 @@
 import React from "react";
 import {Text, StyleSheet, TouchableOpacity} from 'react-native';
-import * as path from "node:path";
 
 interface NavigationButtonProps {
     text: string;
     path: string;
+    navigation: any;
 }
 
-const NavigationButton: React.FC<NavigationButtonProps> = ({text, path, navigation}: any) => {
+const NavigationButton: React.FC<NavigationButtonProps> = ({text, path, navigation}) => {
     return (
-        <TouchableOpacity onPress={() => navigation.navigate(path)}>
-            <Text style={styles.buttonText}>{text} <Text>{text}</Text></Text>
+        <TouchableOpacity onPress={() => navigation.navigate(path)} style={styles.buttonContainer}>
+            <Text style={styles.buttonText}>{text}</Text>
         </TouchableOpacity>
-    )
+    );
 };
 
 const styles = StyleSheet.create({
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         padding: 10,
         alignItems: 'center',
+        marginVertical: 10,
     },
     buttonText: {
         fontWeight: 'bold',
