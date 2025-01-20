@@ -16,6 +16,8 @@ const Button: React.FC<ButtonProps> = ({text}) => {
 const styles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: '#330099',
+        height: 300,
+        width: 50,
         borderRadius: 5,
         padding: 10,
         alignItems: 'center',
