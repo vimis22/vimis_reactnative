@@ -6,6 +6,7 @@ import SignupScreen from "./src/screens/SignupScreen";
 import MainScreen from "./src/screens/MainScreen";
 import SemesterScreen from "./src/screens/SemesterScreen";
 import SubjectScreen from "./src/screens/SubjectScreen";
+import GradeSheetScreen from "./src/screens/GradeSheetScreen";
 import React from "react";
 
 const Drawer = createDrawerNavigator();
@@ -19,6 +20,7 @@ export default function App() {
           <Drawer.Screen name={"MainScreen"} component={MainScreen}/>
           <Drawer.Screen name={"SemesterScreen"} component={SemesterScreen}/>
           <Drawer.Screen name={"SubjectScreen"} component={SubjectScreen}/>
+          <Drawer.Screen name={"GradeSheetScreen"} component={GradeSheetScreen}/>
           {/*<Stack.Screen name={"TaskScreen"} component={TaskScreen}/>*/}
         </Drawer.Navigator>
       </NavigationContainer>
