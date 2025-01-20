@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import SquaredButtons from "../banners/SquaredButtons";
-import SectionTitle from "../banners/SectionTitle";
 import LocationPage from "../banners/LocationPage";
+import LongSquareButton from "../banners/LongSquareButton";
 
 const SubjectScreen = ({navigation}:any) => {
     return(
@@ -11,11 +11,15 @@ const SubjectScreen = ({navigation}:any) => {
                 <LocationPage circletext={""} text={"Subjects"} path={"MainScreen"} navigation={navigation}/>
             </View>
             <View style={styles.subjectListContainer}>
-                <SquaredButtons text={"Lecture1"} path={"SemesterScreen"} navigation={navigation}/>
-                <SquaredButtons text={"Lecture2"} path={"SemesterScreen"} navigation={navigation}/>
-                <SquaredButtons text={"Lecture3"} path={"SemesterScreen"} navigation={navigation}/>
-                <SquaredButtons text={"Lecture4"} path={"SemesterScreen"} navigation={navigation}/>
-                <SquaredButtons text={"Lecture5"} path={"SemesterScreen"} navigation={navigation}/>
+                <View>
+                    <SquaredButtons text={"1"} path={"MainScreen"} navigation={navigation}/>
+                </View>
+                <View>
+                    <LongSquareButton text={"Lecture1"} path={"MainScreen"} navigation={navigation}/>
+                </View>
+                <View>
+                    <LongSquareButton text={"LINK"} path={"MainScreen"} navigation={navigation}/>
+                </View>
             </View>
         </View>
     )
