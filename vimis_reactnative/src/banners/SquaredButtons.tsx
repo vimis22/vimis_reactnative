@@ -16,7 +16,7 @@ const getRandomColor = (): string => {
     return color;
 }
 
-const Subjects: React.FC<SubjectsProps> = ({text, path, navigation}) => {
+const SquaredButtons: React.FC<SubjectsProps> = ({text, path, navigation}) => {
     const randomColor = getRandomColor();
 
     return (
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Subjects;
+export default SquaredButtons;

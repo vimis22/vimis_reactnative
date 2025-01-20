@@ -1,23 +1,26 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import SplashScreen from "./src/screens/SplashScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import MainScreen from "./src/screens/MainScreen";
+import SemesterScreen from "./src/screens/SemesterScreen";
+import SubjectScreen from "./src/screens/SubjectScreen";
 import React from "react";
 
-const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
 export default function App() {
   return (
       <NavigationContainer>
-        <Tab.Navigator initialRouteName="SplashScreen">
-          <Tab.Screen name={"SplashScreen"} component={SplashScreen}/>
-          <Tab.Screen name={"LoginScreen"} component={LoginScreen}/>
-          <Tab.Screen name={"SignupScreen"} component={SignupScreen}/>
-          <Tab.Screen name={"MainScreen"} component={MainScreen}/>
-          {/*<Stack.Screen name={"SubjectScreen"} component={SubjectScreen}/>*/}
+        <Drawer.Navigator initialRouteName="SplashScreen">
+          <Drawer.Screen name={"SplashScreen"} component={SplashScreen}/>
+          <Drawer.Screen name={"LoginScreen"} component={LoginScreen}/>
+          <Drawer.Screen name={"SignupScreen"} component={SignupScreen}/>
+          <Drawer.Screen name={"MainScreen"} component={MainScreen}/>
+          <Drawer.Screen name={"SemesterScreen"} component={SemesterScreen}/>
+          <Drawer.Screen name={"SubjectScreen"} component={SubjectScreen}/>
           {/*<Stack.Screen name={"TaskScreen"} component={TaskScreen}/>*/}
-        </Tab.Navigator>
+        </Drawer.Navigator>
       </NavigationContainer>
   );
 }
