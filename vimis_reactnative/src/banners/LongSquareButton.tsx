@@ -1,7 +1,7 @@
 import React from "react";
 import {Text, StyleSheet, TouchableOpacity} from "react-native";
 
-interface SubjectsProps {
+interface LongSquareButtonProps {
     text: string;
     path: string;
     navigation: any;
@@ -16,7 +16,7 @@ const getRandomColor = (): string => {
     return color;
 }
 
-const LongSquareButton: React.FC<SubjectsProps> = ({text, path, navigation}) => {
+const LongSquareButton: React.FC<LongSquareButtonProps> = ({text, path, navigation}) => {
     const randomColor = getRandomColor();
 
     return (

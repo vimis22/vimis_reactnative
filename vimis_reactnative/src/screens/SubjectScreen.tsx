@@ -3,6 +3,7 @@ import {StyleSheet, View} from 'react-native';
 import SquaredButtons from "../banners/SquaredButtons";
 import LocationPage from "../banners/LocationPage";
 import LongSquareButton from "../banners/LongSquareButton";
+import TextTitle from "../banners/TextTitle";
 
 const SubjectScreen = ({navigation}:any) => {
     return(
@@ -12,12 +13,15 @@ const SubjectScreen = ({navigation}:any) => {
             </View>
             <View style={styles.subjectListContainer}>
                 <View>
+                    <TextTitle text={"1"}/>
                     <SquaredButtons text={"1"} path={"MainScreen"} navigation={navigation}/>
                 </View>
                 <View>
+                    <TextTitle text={"Topic"}/>
                     <LongSquareButton text={"Lecture1"} path={"MainScreen"} navigation={navigation}/>
                 </View>
                 <View>
+                    <TextTitle text={"Link"}/>
                     <LongSquareButton text={"LINK"} path={"MainScreen"} navigation={navigation}/>
                 </View>
             </View>
