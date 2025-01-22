@@ -1,2 +1,3 @@
 # vimis_reactnative
-Her dannes en skitse-version af React-Native
+In this repository we will make the frontendpage of the website.
+This repository will be afterwards merged with the CourseKeeper Respository.
