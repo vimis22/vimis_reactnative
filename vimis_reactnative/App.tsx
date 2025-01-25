@@ -11,6 +11,7 @@ import AssessmentScreen from "./src/screens/AssessmentScreen";
 import InboxScreen from "./src/screens/InboxScreen";
 import React from "react";
 import NotificationScreen from "./src/screens/NotificationScreen";
+import SettingScreen from "./src/screens/SettingScreen";
 
 const Drawer = createDrawerNavigator();
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
           <Drawer.Screen name={"AssessmentScreen"} component={AssessmentScreen}/>
           <Drawer.Screen name={"InboxScreen"} component={InboxScreen}/>
           <Drawer.Screen name={"NotificationScreen"} component={NotificationScreen}/>
-          {/*<Stack.Screen name={"TaskScreen"} component={TaskScreen}/>*/}
+          <Drawer.Screen name={"SettingScreen"} component={SettingScreen}/>
         </Drawer.Navigator>
       </NavigationContainer>
   );
